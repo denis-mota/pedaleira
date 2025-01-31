@@ -13,7 +13,8 @@ def main():
     speaker = Speaker(model="Celestion Blue")
 
     # Criando o amplificador com os componentes
-    vox_ac30 = VoxAC30(preamp, equalizer, poweramp, speaker)
+    vox_ac30 = VoxAC30(gain=1.5, volume=0.8, preamp=preamp, equalizer=equalizer, poweramp=poweramp, speaker=speaker)
+
 
     # Configurações iniciais
     signal_chain = SignalChain()
