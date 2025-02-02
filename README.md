@@ -9,6 +9,23 @@ scipy
 
 Se voce estiver no linux para instalar as dependencias precisa primeira esta no ambiente virtual do python: 
 
+
+
 source .venv/bin/activate  # Linux/macOS
 
-.venv\Scripts\activate     # Windows
+( .venv\Scripts\activate )    # Windows
+
+
+para instalar virtualização do python:
+
+( sudo apt install python3-venv -y )
+
+
+para criar o ambiente virtual:
+
+( python3 -m venv .venv )
+
+
+para ativar ambiente virtual:
+
+source .venv/bin/activate
