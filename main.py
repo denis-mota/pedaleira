@@ -6,22 +6,22 @@ from fx_routing_app import FXRoutingApp
 import customtkinter as ctk # type: ignore
 
 def main():
-    # Criando os componentes do Vox AC30
+    #Criando os componentes do Vox AC30
     preamp = Preamp(volume=2.0)
     equalizer = Equalizer(bass=1.0, mid=1.0, treble=1.5)
     poweramp = PowerAmp(volume=3.0)
     speaker = Speaker(model="Celestion Blue")
 
-    # Criando o amplificador com os componentes
+    #Criando o amplificador com os componentes
     vox_ac30 = VoxAC30(gain=1.5, volume=0.8, preamp=preamp, equalizer=equalizer, poweramp=poweramp, speaker=speaker)
 
 
-    # Configurações iniciais
+    #Configurações iniciais
     signal_chain = SignalChain()
     signal_chain.add_block(Distortion(gain=2.0))
     signal_chain.add_block(vox_ac30)  # CERTO!
 
-    # Processamento do sinal
+    #Processamento do sinal
     input_signal = 0.5  # Exemplo de sinal de entrada (ajustar conforme necessário)
     output_signal = signal_chain.process(input_signal)
     
@@ -30,7 +30,7 @@ def main():
 
     print(f"Sinal de saída: {output_signal}")
 
-    # Iniciando a interface gráfica
+    #Iniciando a interface gráfica
     root = ctk.CTk()  # Cria a janela principal
     app = FXRoutingApp(root)  # Inicializa o aplicativo gráfico
     root.mainloop()  # Inicia o loop de eventos do customTkinter
