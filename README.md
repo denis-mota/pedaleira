@@ -11,7 +11,7 @@ Se voce estiver no linux para instalar as dependencias precisa primeira esta no 
 
 
 
-source .venv/bin/activate  # Linux/macOS
+( source .venv/bin/activate ) # Linux/macOS
 
 ( .venv\Scripts\activate )    # Windows
 
