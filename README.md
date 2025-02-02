@@ -7,5 +7,8 @@ customtkinter,
 sounddevicer,
 scipy
 
-Se voce estiver no linux para instalar as dependencias precisa primeira esta no ambiente virtual do python,  source .venv/bin/activate  # Linux/macOS
+Se voce estiver no linux para instalar as dependencias precisa primeira esta no ambiente virtual do python: 
+
+source .venv/bin/activate  # Linux/macOS
+
 .venv\Scripts\activate     # Windows
