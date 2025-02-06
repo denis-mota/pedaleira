@@ -30,7 +30,7 @@ para ativar ambiente virtual:
 
 source .venv/bin/activate
 ###############################################################################################################################################################
-
+se trocar pelo flet como interface
 resolvendo o problema do flet com libmpv.so.1 no linux
 
 no terminal use
