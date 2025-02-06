@@ -29,3 +29,12 @@ para criar o ambiente virtual:
 para ativar ambiente virtual:
 
 source .venv/bin/activate
+###############################################################################################################################################################
+
+resolvendo o problema do flet com libmpv.so.1 no linux
+
+no terminal use
+apt install libmpv-dev mpv 
+
+depois que terminar execute esse tambem
+ln -s /usr/lib/x86_64-linux-gnu/libmpv.so  /usr/lib/libmpv.so.1 
